@@ -1,0 +1,28 @@
+<script>
+  function fn() {
+    document.querySelector("h2").innerText = "Hello Javascript";
+    document.querySelector("h2").style.color = "green";
+  }
+  function f1() {
+    document.querySelector("h3").style.backgroundColor = "green";
+  }
+  function f2() {
+    document.querySelector("h3").style.backgroundColor = "black";
+  }
+</script>
+<style>
+  h2 {
+    color: red;
+  }
+  h3 {
+    background-color: black;
+    color: white;
+    padding: 30px;
+  }
+</style>
+
+<h2>Welcome to HTML</h2>
+
+<h3 onmouseenter="f1()" onmouseleave="f2()">Welcome to HTML</h3>
+
+<button onclick="fn()">Welcome to HTML</button>
